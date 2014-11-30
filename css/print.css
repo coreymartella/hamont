@@ -1,0 +1,118 @@
+/* DISPLAY NONE */
+h1, .large-3, .top-bar, #footer{
+  display: none !important;
+}
+
+.content{
+width:100%;
+}
+
+.content:after {
+content: "HamOnt.net 2014 | This research was conducted by Ryan Price, a Master’s student under the supervision of Dr. Christina Baade in the department of Communications and New Media at McMaster University.";
+font-weight: bold;
+font-size: 12pt;
+color: black;
+}
+
+
+/* FONTS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+body{
+font-family:"Times New Roman", Times, Georgia, serif;
+text-align: left;
+color: black;
+margin:0.5in;
+}
+
+h1, h2, h3, h4{
+text-transform:capitalize;
+font-weight: bold;
+}
+
+p, ul, ol{
+font-size:12pt;
+line-height:2em;
+}
+
+p span{
+  float: left;
+  width: 100%;
+  margin:1em 0 !important;
+  padding: 1em;
+  border: 1px solid #ccc;
+  font-size:1em;
+  line-height: 1.2em;
+}
+
+p span i{
+  font-weight: bold;
+  text-transform: capitalize;
+  display: inline;
+}
+
+p span i:after{
+  content: ": ";
+}
+
+blockquote p:first-child{
+  font-size:1em;
+}
+
+blockquote{
+  font-style:italic;
+  border: none;
+}
+
+h1{
+font-size:20pt;
+}
+
+h2{
+font-size:18pt;
+}
+
+h3{
+font-size:14pt;
+margin-top: 36pt;
+
+}
+
+.content a{
+color: black !important;
+text-decoration:none;
+}
+
+a{
+text-decoration:underline;
+}
+
+
+
+#references a:link:after, #references a:visited:after {
+   content: " (" attr(href) ") ";
+   color: black !important;
+   word-wrap: break-word;
+}
+
+a.ptr {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+a[href*="#"]{
+  color: #000 !important;
+}
+
+img{
+  max-width:100%;
+}
+
+#content:after{
+  font-weight: bold;
+  content: "This article was published by Ryan Price at http://www.ryanprice.net. Feel free to share, but please give credit where credit is due.";
+}
+
+@page :left {
+  @bottom-left {
+    content: counter(page);
+  }
+}
